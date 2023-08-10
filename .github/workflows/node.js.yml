@@ -27,7 +27,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - name: nodejs version
-      run: nodejs --version
+      run: node --version
     - name: docker version
       run: docker --version
     - name: terraform version
