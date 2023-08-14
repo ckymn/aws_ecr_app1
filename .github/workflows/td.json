@@ -1,0 +1,58 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:710449245738:task-definition/devops-case-app-fm",
+    "containerDefinitions": [
+        {
+            "name": "devops-case-app-fm",
+            "image": "710449245738.dkr.ecr.us-east-1.amazonaws.com/devops-case",
+            "cpu": 256,
+            "memory": 512,
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": []
+        }
+    ],
+    "family": "devops-case-app-fm",
+    "taskRoleArn": "arn:aws:iam::710449245738:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::710449245738:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512",
+    "registeredAt": "2023-08-14T11:51:39.480Z",
+    "registeredBy": "arn:aws:iam::710449245738:user/ckymn",
+    "tags": []
+}
