@@ -9,7 +9,7 @@ env:
   ECR_REPOSITORY: devops-case
   ECS_SERVICE: devops-case-service
   ECS_CLUSTER: devops-case-cluster
-  CONTAINER_NAME: devops-case-app
+  CONTAINER_NAME: devops-case-app-fm
   ECS_TASK_DEFINITION: .github/workflows/td.json
 
 # permissions:
